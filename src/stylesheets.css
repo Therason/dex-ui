@@ -93,7 +93,7 @@ body {
   background: white;
   width: 80%;
   height: 75%;
-  position: absolute;
+  position: relative;
   left: 10%;
   top: 17.5%;
   border-radius: 10px;
@@ -120,7 +120,7 @@ body {
   left: calc(50% - 25px);
   border-radius: 0 0 25px 25px;
   box-shadow: 0 0 0 2px black;
-  z-index: 3;
+  z-index: 1;
 }
 
 #smile::before,
@@ -139,4 +139,42 @@ body {
 
 #smile::after {
   right: 30%;
+}
+
+#search-bar {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 250px;
+  height: 30px;
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 125px);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 2px rgb(110, 127, 137);
+  text-align: center;
+  border-radius: 10px;
+}
+
+#search-results {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  width: 250px;
+  height: 265px;
+  position: absolute;
+  top: 110px;
+  left: calc(50% - 125px);
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 0 2px rgb(110, 127, 137);
+  list-style: none;
+  border-radius: 10px;
+}
+
+#search-results > li {
+  width: 100%;
+  border: 0px;
+  padding: 0px;
+  margin: 10px 0px;
+  text-align: center;
 }
